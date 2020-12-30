@@ -1,0 +1,28 @@
+//Imports and assets
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+//Style variables and themes
+$font: 'Poppins', sans-serif;
+
+$primary-color: #148188;
+$accent-color: #D61C5F;
+$our-green: #08D165;
+$our-black: #2c2c2c;
+
+$main-border: 5px;
+
+//Global styles
+
+*,*::before,*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h1{
+   font-size: 2.3em;
+   font-weight: 600;
+   text-align: center;
+   margin-bottom: 3vh;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Logger</title>
+
+   <link rel="stylesheet" href="css/main.css">
+
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <!-- <script src="js/axios.min.js"></script> -->
+   <script src="./js/script.js" type="module"></script>
+</head>
+
+<body>
+   <section class="view view_login">
+      <div class="view_main">
+         <h1>LOGGER</h1>
+         <p class="nav_wrap"><span class="nav nav_active">Login</span>/<button class="nav signup-link">Signup</button>
+         </p>
+         <label for="name" class="input_label">Username</label>
+         <input type="text" class="input" name="name">
+         <label for="password" class="input_label">Password</label>
+         <input type="password" class="input" name="password">
+         <button class="button btn_login">Login</button>
+      </div>
+      <div class="info_popup">
+         <img src="" alt="" class="info_img">
+         <p class="info_text"></p>
+         <button class="button btn_continue">Continue</button>
+      </div>
+      <span class="overlay"></span>
+   </section>
+
+   <template id="login">
+      <section class="view view_login">
+         <div class="view_main">
+            <h1>LOGGER</h1>
+            <p class="nav_wrap"><span class="nav nav_active">Login</span>/<button
+                  class="nav signup-link">Signup</button></p>
+            <label for="name" class="input_label">Username</label>
+            <input type="text" class="input" name="name">
+            <label for="password" class="input_label">Password</label>
+            <input type="password" class="input" name="password">
+            <button class="button btn_login">Login</button>
+         </div>
+         <div class="info_popup">
+            <img src="" alt="" class="info_img">
+            <p class="info_text"></p>
+            <button class="button btn_continue">Continue</button>
+         </div>
+         <span class="overlay"></span>
+      </section>
+   </template>
+
+   <template id="signup">
+      <section class="view view_login">
+         <div class="view_main">
+            <h1>LOGGER</h1>
+            <p class="nav_wrap"><span class="nav nav_active">Signup</span>/
+            <button class="nav login_link">Login</button></p>
+            <label for="name" class="input_label">Username</label>
+            <input type="text" class="input" name="name" required>
+            <label for="email" class="input_label">Email</label>
+            <input type="email" class="input" name="email" required>
+            <label for="password" class="input_label">Password</label>
+            <input type="password" class="input" name="password" required>
+            <button class="button btn_register">Register</button>
+         </div>
+         <div class="info_popup">
+            <img src="" alt="" class="info_img">
+            <p class="info_text"></p>
+            <button class="button btn_continue">Continue</button>
+         </div>
+         <span class="overlay"></span>
+      </section>
+   </template>
+
+   <template id="profile">
+      <section class="view view_profile">
+         <div class="header">
+            <img src="" alt="">
+            <span class="header_name"></span>
+         </div>
+         <div class="view_main">
+            <div class="pic_section">
+
+            </div>
+            <div class="profile_info">
+               <h3>About Me</h3>
+               <label for="name" class="input_label">Username</label>
+               <input type="text" class="input" name="name">
+               <label for="fullname" class="input_label">Fullname</label>
+               <input type="text" class="input" name="fullname">
+               <label for="email" class="input_label">Email</label>
+               <input type="email" class="input" name="email">
+               <label for="password" class="input_label">Password</label>
+               <input type="password" class="input" name="password" placeholder="Enter New Password">
+               <label for="extra" class="input_label">Extra</label>
+               <textarea type="text" class="input info_extra" name="extra"></textarea>
+               <div class="profile_controls">
+                  <button class="profile_btn btn_save"><img src="">Edit</button>
+                  <button class="profile_btn btn_edit"><img src="">Save</button>
+               </div>
+            </div>
+            <button class="user_logout"><img src="" alt="">Logout</button>
+         </div>
+         <div class="footer">
+            Designed By <a href="https://github.com/tobychidi" target="new">Toby Chidi</a> &copy; 2020
+         </div>
+      </section>
+   </template>
+</body>
+
+</html>

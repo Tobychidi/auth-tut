@@ -1,0 +1,13 @@
+@import 'partials/globals',
+         'partials/components',
+         'partials/profile';
+
+
+body {
+   background-color: black;
+   font-family: $font;
+   color: white;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}

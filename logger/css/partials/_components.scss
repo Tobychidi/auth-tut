@@ -1,0 +1,128 @@
+//MIXINS FOR COMPONENTS
+.view {
+   width: 320px;
+   height: 568px;
+   overflow-y: auto;
+   position: relative;
+   top: 50%; left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: $primary-color;
+}
+
+.view_login,.view_signup{
+   overflow: hidden;
+}
+
+.view_main {
+   margin: auto;
+   margin-top: 10vh;
+   width: 70%;
+}
+
+.nav {
+   font: inherit;
+   text-decoration: none;
+   color: white;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.nav_active {
+   font-size: 1.4em;
+   cursor: text;
+}
+
+.nav_wrap {
+   margin-bottom: 3vh;
+}
+
+.input,
+.button {
+   display: inline-block;
+   font: inherit;
+   height: 45px;
+   border-radius: $main-border;
+   border: none;
+   width: 100%;
+   margin: 1vh auto;
+   color: $our-black;
+}
+
+.input_label {
+   display: inline-block;
+   font-weight: 400;
+   font-size: .8em;
+   margin-left: 15px;
+}
+
+.input{
+   padding: 0 10px;
+}
+
+.button {
+   background-color: $accent-color;
+   color: white;
+   font-weight: 400;
+   font-size: 1.2em;
+   margin-top: 4vh;
+
+   &:active {
+      background-color: darken($accent-color, 10%);
+   }
+}
+
+.info_popup {
+   visibility: hidden;
+   background-color: $primary-color;
+   height: 38vh;
+   width: 80%;
+   position: absolute;
+   bottom: -2vh;
+   left: 50%;
+   transform: translateX(-50%) translateY(100%);
+   border-radius: 10px;
+   z-index: 2;
+   padding: 10%;
+   transition: 200ms ease-out;
+   text-align: center;
+
+   .info_img{
+      height: 60px;
+   }
+
+   .info_text{
+      font-size: .9em;
+   }
+
+   .btn_continue{
+      position: absolute;
+      bottom: 30px; left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+   }
+}
+
+.overlay {
+   display: block;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.808);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   visibility: hidden;
+   opacity: 0;
+   transition: 200ms ease-out;
+}
+
+.info_popup.active{
+   visibility: visible;
+   transform: translateX(-50%) translateY(0%);
+
+   &~.overlay{
+      visibility: visible;
+      opacity: 1;
+   }
+}
